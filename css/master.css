@@ -1,0 +1,46 @@
+
+div {
+  width: auto;
+  height: 100%;
+  border: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.heading {
+	border: solid 2px #fff;
+}
+
+
+section {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	color: #fff;
+	background: linear-gradient(-45deg, #FF944D, #EE7752, #E73C7E, #23A6D5, #23D5AB, #00B359);
+	background-size: 400%, 400%;
+	position: relative;
+	animation: animate 10s ease-in-out infinite;
+}
+
+
+@keyframes animate {
+	0%{ background-position: 0 50%; }
+	50%{ background-position: 100% 50%; }
+	100%{ background-position: 0 50%; }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.scrollbar {
+  -ms-overflow-style: none;
+}
